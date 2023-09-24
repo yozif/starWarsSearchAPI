@@ -6,7 +6,7 @@ Phase 1 - complete
 
 #### Example:
 
-Users can select a category to to show all data under the selected category pulled from https://swapi.dev/. Currently working for Films, Starships and Vehicles.
+Users can select a category to show all data under the selected category pulled from https://swapi.dev/. Currently working for Films, Starships and Vehicles.
 
 ## Project Screen Shot(s)
 
