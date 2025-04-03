@@ -1,0 +1,54 @@
+.sortOutput {
+    font-family: 'Play', sans-serif;
+    display: flex;
+    border: none;
+    color: #bbb;
+    background: transparent;
+    margin: 5px 0;
+    outline: none;
+    position: relative;
+    transition: 0.3s;
+    padding: 5px;
+    font-size: 20px;
+}
+.sortOutput:hover {
+    color: #fff;
+}
+.sortOutput::before {
+    content: '';
+    border-bottom: 1px solid #bbb;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+}
+.sortOutput:hover::before {
+    width: 100%;
+    padding: 0;
+    border-color: #fff;
+}
+.sortOutput-active {
+    color: #fff;
+}
+.sortOutput-active::before {
+    color: #fff;
+    width: 100%;
+    border-color: #fff;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sortOutput {
+        margin: 0.5vw 0;
+        padding: 0.5vw;
+    }
+}
+@media only screen and (max-width: 534px) {
+    .sortOutput {
+        font-size: 2.8vw;
+    }
+}
