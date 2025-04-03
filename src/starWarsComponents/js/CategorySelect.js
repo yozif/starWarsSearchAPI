@@ -10,6 +10,7 @@ export default function CategorySelect({onClick, category}) {
         }`}
         value="films"
         onClick={onClick}
+        data-testid="category-cta"
       >
         Films
       </button>
@@ -19,6 +20,7 @@ export default function CategorySelect({onClick, category}) {
         }`}
         value="starships"
         onClick={onClick}
+        data-testid="category-cta"
       >
         Starships
       </button>
@@ -28,6 +30,7 @@ export default function CategorySelect({onClick, category}) {
         }`}
         value="vehicles"
         onClick={onClick}
+        data-testid="category-cta"
       >
         Vehicles
       </button>
