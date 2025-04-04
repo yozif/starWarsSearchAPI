@@ -7,6 +7,7 @@ export default function SortOutput({ sortOutput, azActive }) {
       className={`sortOutput ${azActive ? "sortOutput-active" : ""}`}
       value="a-z"
       onClick={sortOutput}
+      data-testid="sort-button"
     >
       A-Z
     </button>

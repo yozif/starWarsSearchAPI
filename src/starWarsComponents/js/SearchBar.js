@@ -12,6 +12,7 @@ export default function SearchBar({onClick, onChange ,searchValue}) {
           placeholder="Search"
           onChange={onChange}
           value={searchValue}
+          data-testid="search-input"
         />
         <button
           type="button"

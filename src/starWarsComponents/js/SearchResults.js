@@ -14,7 +14,7 @@ export default function SearchResults({ outputs, category }) {
           {outputs.map((output, index) => (
             <Grid item xs={4} key={index}>
               {category === "films" ? (
-                <div className="gridBox">
+                <div className="gridBox" data-testid="sorted-item">
                   <h3>{output.title}</h3>
                   <p>
                     Episode number: <span>{output.episode_id}</span>
@@ -33,7 +33,7 @@ export default function SearchResults({ outputs, category }) {
                   </p>
                 </div>
               ) : (
-                <div className="gridBox">
+                <div className="gridBox" data-testid="sorted-item">
                   <h3>{output.name}</h3>
                   <p>
                     Model: <span>{output.model}</span>
